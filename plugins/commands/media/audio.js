@@ -15,7 +15,7 @@ const config = {
     cooldown: 30,
     credits: "XaviaTeam",
     extra: {
-        "MAX_SONGS": 6
+        "MAX_SONGS": 3
     }
 }
 
