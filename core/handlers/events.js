@@ -232,6 +232,7 @@ async function handleCommand(event, xDatabase) {
                                 balance: {
                                     from: Balance.from,
                                     make: Balance.make,
+                                    makeSafe: Balance.makeSafe,
                                     ...Balance.from(senderID),
                                 },
                                 getLang: getLangForCommand,
@@ -318,7 +319,8 @@ async function handleReaction(event, xDatabase) {
                 balance: {
                     from: Balance.from,
                     make: Balance.make,
-                    ...Balance.from(senderID),
+                    makeSafe: Balance.makeSafe,
+                    ...Balance.from(userID),
                 },
                 getLang: getLangForCommand,
                 data,
@@ -382,6 +384,7 @@ async function handleReply(event, xDatabase) {
                 balance: {
                     from: Balance.from,
                     make: Balance.make,
+                    makeSafe: Balance.makeSafe,
                     ...Balance.from(senderID),
                 },
                 getLang: getLangForCommand,
@@ -435,6 +438,7 @@ async function handleMessage(event, xDatabase) {
                 balance: {
                     from: Balance.from,
                     make: Balance.make,
+                    makeSafe: Balance.makeSafe,
                     ...Balance.from(senderID),
                 },
                 getLang: getLangForCommand,

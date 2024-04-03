@@ -2,6 +2,10 @@
   // These tasks will run in order when initializing your CodeSandbox project.
   "setupTasks": [
     {
+      "name": "n",
+      "command": "npm i"
+    },
+    {
       "command": "npm start",
       "name": "n"
     }
@@ -16,8 +20,7 @@
     },
     "startDev": {
       "name": "startDev",
-      "command": "yarn startDev",
-      "runAtStart": false
+      "command": "yarn startDev"
     }
   }
 }
